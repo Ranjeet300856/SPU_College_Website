@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------------Header Design --------------------------------------------------*/
+
+header {
+    display: flex;
+    background-color: whitesmoke;
+    height: 200px;
+    width: 100%;
+}
+
+header .part1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 150px;
+}
+
+/*---------- Logo Desing ----------*/
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    width: clamp(80px, 10vw, 120px);
+}
+
+/*---------- Main Content Desing ----------*/
+.mainContent {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 20px;
+}
+
+
+.mainContent h1 a {
+    text-decoration: none;
+    color: #0b2c5f;
+    transition: 0.3s ease;
+    font-size: clamp(24px, 3vw, 38px);
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.mainContent h1 a:hover {
+    color: #E49B1F;
+}
+
+.mainContent p {
+    margin: 0;
+    font-size: clamp(13px, 1.2vw, 16px);
+    line-height: 1.5;
+    color: #333;
+}
+
+.mainContent p a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.mainContent p a:hover {
+    color: #d62828;
+    text-decoration: underline;
+}
+
+/*---------- Header Part 2 ----------*/
+header .part2 {
+    height: 150px;
+    display: grid;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#phone {
+    width: 200px;
+    display: flex;
+    align-items: last baseline;
+}
+
+#phone img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#phone p {
+    font: 13px Montserrat;
+    color: black;
+}
+
+.phoneText a {
+    text-decoration: none;
+    font-weight: 550;
+    color: black;
+}
+
+#email {
+    display: flex;
+    align-items: center;
+}
+
+#email img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#email p {
+    font: 13px Montserrat;
+    color: black;
+}
+
+
+.emailText a {
+    text-decoration: none;
+    font-weight: 550;
+    color: black;
+}
+
+.part2 a {
+    transition: 0.3s ease;
+}
+
+.part2 a:hover {
+    color: rgb(22, 42, 190);
+}
