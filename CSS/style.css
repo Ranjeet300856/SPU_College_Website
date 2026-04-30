@@ -5,9 +5,13 @@
 }
 
 /* --------------------------------------------------Header Design --------------------------------------------------*/
+.x {
+    display: flex;
+}
 
 header {
     display: flex;
+    flex-direction: column;
     background-color: whitesmoke;
     height: 200px;
     width: 100%;
@@ -17,7 +21,8 @@ header .part1 {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 150px;
+    height: 160px;
+    width: 50%;
 }
 
 /*---------- Logo Desing ----------*/
@@ -73,7 +78,7 @@ header .part1 {
 
 /*---------- Header Part 2 ----------*/
 header .part2 {
-    height: 150px;
+    height: 160px;
     display: grid;
     margin-left: auto;
     margin-right: 20px;
@@ -131,4 +136,42 @@ header .part2 {
 
 .part2 a:hover {
     color: rgb(22, 42, 190);
+}
+
+/*---------- Navigation Bar ----------*/
+
+.navBar {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #0b2c5f;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.navBar a:hover {
+    color: #E49B1F;
+}
+
+.navBar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0%;
+    height: 1.5px;
+    background: #E49B1F;
+    transition: 0.3s;
+}
+
+.navBar a:hover::after {
+    left: 0;
+    width: 100%;
 }
