@@ -177,6 +177,23 @@ header .part2 {
     width: 100%;
 }
 
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    width: 30px;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #0b2c5f;
+    /* आपके लिंक का कलर */
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
 /*---------- Responsive Header for Mobile Phone ----------*/
 
 @media screen and (max-width: 768px) {
@@ -198,7 +215,7 @@ header .part2 {
     header .y {
         height: 10%;
         width: 100%;
-        background-color: pink;
+        background-color: wheat;
     }
 
     header .x .part1 {
@@ -241,4 +258,50 @@ header .part2 {
         padding-top: 5px;
 
     }
+
+    /*---------- Responsive Navigation Bar for Mobile Phone ----------*/
+
+    .menu-icon {
+        display: flex;
+        color: white;
+        /* मोबाइल पर आइकन दिखाएँ */
+    }
+
+    .navBar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        /* 'fixed' की जगह 'absolute' ताकि वह हेडर के नीचे रहे */
+        top: 100%;
+        /* इसे अपने हेडर की ऊंचाई के हिसाब से एडजस्ट करें ताकि यह आइकन के ठीक नीचे से शुरू हो */
+        left: 0;
+        /* अगर आप इसे दाईं तरफ चाहते हैं */
+        width: 250px;
+        /* पूरी स्क्रीन के बजाय सिर्फ 200px चौड़ा */
+        background-color: white;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        border-radius: 0 8px 8px 0;
+        /* नीचे के कोने गोल करने के लिए */
+    }
+
+    .navBar.active {
+        display: flex !important;
+        /* अब यह सिर्फ उतनी ही जगह लेगा जितनी आपने 'width' दी है */
+    }
+
+    .navBar a {
+        padding: 12px 20px;
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: left;
+        /* लिंक्स को बाईं तरफ रखने के लिए */
+        font-size: 14px;
+        background-color: #f8f9fa;
+    }
+}
+
+.y {
+    position: relative;
+    /* ताकि .navBar इसके हिसाब से अपनी जगह तय कर सके */
 }
