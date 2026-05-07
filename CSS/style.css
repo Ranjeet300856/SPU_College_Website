@@ -202,6 +202,56 @@ header .part2 {
     width: 100%;
 }
 
+/* ---------------- Section 1 ---------------- */
+.section1 {
+    margin-top: 20px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+    padding: 20px;
+}
+
+.section1 .about {
+    height: fit-content;
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px gray;
+    transition: 0.5s;
+}
+
+.section1 .about:hover {
+    transform: scale(1.05) translateY(-4px);
+}
+
+.section1 .studentNotice {
+    border: 2px solid black;
+    width: 20%;
+}
+
+.section1 .about h1 {
+    color: #E49B1F;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.section1 .about p {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    text-align: justify;
+}
+
+.section1 .about p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 /*---------- Responsive Header for Mobile Phone ----------*/
 
 @media screen and (max-width: 868px) {
@@ -312,6 +362,37 @@ header .part2 {
     .collegeIMG img {
         height: 17vh;
         width: 100%;
+    }
+
+    /* ---------------- Section 1 ---------------- */
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+        border: none;
+        margin-top: 5px;
+    }
+
+    .section1 .about {
+        border: none;
+        height: fit-content;
+        width: 100%;
+        background-color: white;
+    }
+
+    .section1 .studentNotice {
+        border: none;
+        height: 35%;
+        width: 100%;
+    }
+
+    .section1 .about h1 {
+        font-size: 30px;
+    }
+
+    .section1 .about p {
+        line-height: 20px;
+        color: #5C5C5C;
     }
 }
 
