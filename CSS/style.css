@@ -194,9 +194,17 @@ header .part2 {
     transition: 0.4s;
 }
 
+/* -------------------------------------------------- Main Section Design --------------------------------------------------*/
+
+/* ---------------- College Image ---------------- */
+.collegeIMG img {
+    height: 40vh;
+    width: 100%;
+}
+
 /*---------- Responsive Header for Mobile Phone ----------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     header {
         background-color: whitesmoke;
         height: 40vh;
@@ -298,6 +306,12 @@ header .part2 {
         /* लिंक्स को बाईं तरफ रखने के लिए */
         font-size: 14px;
         background-color: #f8f9fa;
+    }
+
+    /*---------- Responsive College Image for Mobile Phone ----------*/
+    .collegeIMG img {
+        height: 17vh;
+        width: 100%;
     }
 }
 
