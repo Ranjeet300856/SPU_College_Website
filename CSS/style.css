@@ -205,10 +205,8 @@ header .part2 {
 /* ---------------- Section 1 ---------------- */
 .section1 {
     margin-top: 20px;
-    border: 2px solid black;
     display: flex;
     justify-content: space-evenly;
-    height: fit-content;
     width: 100%;
     padding: 20px;
 }
@@ -228,7 +226,6 @@ header .part2 {
 }
 
 .section1 .studentNotice {
-    border: 2px solid black;
     width: 20%;
 }
 
@@ -250,6 +247,75 @@ header .part2 {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+/*---------- Section 1 - Student Notice ----------*/
+.section1 .studentNotice {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 10px gray;
+    height: 410px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+
+.section1 .studentNotice:hover {
+    transform: scale(1.05) translateY(-4px);
+}
+
+.heading3 {
+    height: fit-content;
+    background-color: orange;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.noticeWrapper {
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.noticeContent {
+    position: absolute;
+    animation: scrollUp 15s linear infinite;
+}
+
+.heading3 h3 {
+    font-size: 24px;
+    color: white;
+    padding: 20px;
+}
+
+.Notice {
+    padding: 15px;
+    border-bottom: 1px solid gray;
+    height: 80px;
+    margin: 0;
+}
+
+.Notice a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+@keyframes scrollUp {
+
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+
+}
+
+.noticeContent:hover {
+    animation-play-state: paused;
 }
 
 /*---------- Responsive Header for Mobile Phone ----------*/
