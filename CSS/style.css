@@ -318,6 +318,73 @@ header .part2 {
     animation-play-state: paused;
 }
 
+/*---------- Section 2 - Heading Part ----------*/
+.section2 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.courseHeading {
+    height: fit-content;
+    width: fit-content;
+    color: #E49B1F;
+}
+
+.courseHeading h2 {
+    font-size: 40px;
+    border-bottom: 2px solid#E49B1F;
+}
+
+.course {
+    height: fit-content;
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    width: 25%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px gray;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 30px;
+    color: #0b2c5f;
+}
+
+.card p {
+    font-weight: bold;
+}
+
+.card button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e293b;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
 /*---------- Responsive Header for Mobile Phone ----------*/
 
 @media screen and (max-width: 868px) {
@@ -459,6 +526,43 @@ header .part2 {
     .section1 .about p {
         line-height: 20px;
         color: #5C5C5C;
+    }
+
+    /* ---------------- Section 2  ---------------- */
+    .course {
+        height: fit-content;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        height: 200px;
+        width: 41%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card p {
+        font-weight: 100;
+    }
+
+    .card button {
+        background-color: whitesmoke;
+        color: black;
+        font-weight: bold;
+    }
+
+    #msc {
+        width: 60%;
+    }
+
+    #msc p {
+        margin-top: 5px;
+    }
+
+    #bca p {
+        font-size: 10px;
     }
 }
 
