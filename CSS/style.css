@@ -384,6 +384,82 @@ header .part2 {
     transform: translateY(-10px);
 }
 
+/*-------------- Section - 3 --------------*/
+.IMGContainer {
+    margin-top: 50px;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Part1 {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Part2 {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    margin-top: 10px;
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 20px 0;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    width: max-content;
+    /* यह इमेजेस के हिसाब से चौड़ाई लेगा */
+    animation: scroll 25s linear infinite;
+    /* समय अपनी ज़रूरत अनुसार बदलें */
+}
+
+
+.Part1 h3 {
+    font-size: 40px;
+    color: #E49B1F;
+    border-bottom: 2px solid #E49B1F;
+    width: fit-content;
+}
+
+.Part2 .img {
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-width: 350px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: white;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* माउस ले जाने पर स्लाइडर को रोकने के लिए (वैकल्पिक) */
+.Part2:hover .scrolling-wrapper {
+    animation-play-state: paused;
+}
+
 
 /*---------- Responsive Header for Mobile Phone ----------*/
 
