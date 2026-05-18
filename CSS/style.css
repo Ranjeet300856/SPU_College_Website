@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-/* --------------------------------------------------Header Design --------------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*-----Header Desing-----*/
 .x {
     display: flex;
 }
@@ -25,7 +29,7 @@ header .part1 {
     width: 50%;
 }
 
-/*---------- Logo Desing ----------*/
+/* Logo */
 .logo {
     padding: 10px;
 }
@@ -34,7 +38,7 @@ header .part1 {
     width: clamp(80px, 10vw, 120px);
 }
 
-/*---------- Main Content Desing ----------*/
+/* Main Content */
 .mainContent {
     display: inline-flex;
     flex-direction: column;
@@ -77,7 +81,7 @@ header .part1 {
     text-decoration: underline;
 }
 
-/*---------- Header Part 2 ----------*/
+/* Header Part 2 */
 header .part2 {
     height: 160px;
     display: grid;
@@ -139,11 +143,11 @@ header .part2 {
     color: #E49B1F;
 }
 
-/*---------- Navigation Bar ----------*/
+/* Navigation Bar */
 
 .navBar {
     height: 40px;
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -189,20 +193,25 @@ header .part2 {
     width: 25px;
     height: 3px;
     background-color: #0b2c5f;
-    /* आपके लिंक का कलर */
     margin: 2px 0;
     transition: 0.4s;
 }
 
-/* -------------------------------------------------- Main Section Design --------------------------------------------------*/
+.y {
+    display: flex;
+    justify-content: center;
+}
 
-/* ---------------- College Image ---------------- */
+/*-----Main Section Design-----*/
+
+/* College Image */
 .collegeIMG img {
     height: 40vh;
     width: 100%;
 }
 
-/* ---------------- Section 1 ---------------- */
+
+/* Section 1 */
 .section1 {
     margin-top: 20px;
     display: flex;
@@ -222,7 +231,7 @@ header .part2 {
 }
 
 .section1 .about:hover {
-    transform: scale(1.05) translateY(-4px);
+    transform: scale(1.01) translateY(-4px);
 }
 
 .section1 .studentNotice {
@@ -249,7 +258,6 @@ header .part2 {
     font-weight: bold;
 }
 
-/*---------- Section 1 - Student Notice ----------*/
 .section1 .studentNotice {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -261,7 +269,7 @@ header .part2 {
 }
 
 .section1 .studentNotice:hover {
-    transform: scale(1.05) translateY(-4px);
+    transform: scale(1.01) translateY(-4px);
 }
 
 .heading3 {
@@ -318,7 +326,7 @@ header .part2 {
     animation-play-state: paused;
 }
 
-/*---------- Section 2 - Heading Part ----------*/
+/* Section 2 */
 .section2 {
     height: fit-content;
     width: 100%;
@@ -384,7 +392,7 @@ header .part2 {
     transform: translateY(-10px);
 }
 
-/*-------------- Section - 3 --------------*/
+/* Section - 3 */
 .IMGContainer {
     margin-top: 50px;
     height: 45vh;
@@ -419,9 +427,7 @@ header .part2 {
 .scrolling-wrapper {
     display: flex;
     width: max-content;
-    /* यह इमेजेस के हिसाब से चौड़ाई लेगा */
     animation: scroll 25s linear infinite;
-    /* समय अपनी ज़रूरत अनुसार बदलें */
 }
 
 
@@ -455,12 +461,11 @@ header .part2 {
     }
 }
 
-/* माउस ले जाने पर स्लाइडर को रोकने के लिए (वैकल्पिक) */
 .Part2:hover .scrolling-wrapper {
     animation-play-state: paused;
 }
 
-/* -------------------------------------------------- Footer Design --------------------------------------------------*/
+/*-----Footer Design-----*/
 footer {
     border: 2px solid black;
     height: fit-content;
@@ -506,10 +511,45 @@ address {
     padding-top: 20px;
 }
 
+/*-----About Page Desing-----*/
+#xdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/*---------- Responsive Header for Mobile Phone ----------*/
+#History {
+    height: 60vh;
+    width: 60%;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    line-height: 22px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+    background-color: #fffaf0;
+}
+
+#History p {
+    padding-top: 50px;
+    font-size: 18px;
+    color: #5c5c5c;
+}
+
+#History h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    color: #E49B1F;
+}
+
+
+/*-----Responsive Header-----*/
 
 @media screen and (max-width: 868px) {
+
+    /* Header */
     header {
         background-color: whitesmoke;
         height: 40vh;
@@ -572,35 +612,28 @@ address {
 
     }
 
-    /*---------- Responsive Navigation Bar for Mobile Phone ----------*/
+    /* Navigation Bar*/
 
     .menu-icon {
         display: flex;
         color: white;
-        /* मोबाइल पर आइकन दिखाएँ */
     }
 
     .navBar {
         display: none;
         flex-direction: column;
         position: absolute;
-        /* 'fixed' की जगह 'absolute' ताकि वह हेडर के नीचे रहे */
         top: 100%;
-        /* इसे अपने हेडर की ऊंचाई के हिसाब से एडजस्ट करें ताकि यह आइकन के ठीक नीचे से शुरू हो */
         left: 0;
-        /* अगर आप इसे दाईं तरफ चाहते हैं */
         width: 250px;
-        /* पूरी स्क्रीन के बजाय सिर्फ 200px चौड़ा */
         background-color: white;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         border-radius: 0 8px 8px 0;
-        /* नीचे के कोने गोल करने के लिए */
     }
 
     .navBar.active {
         display: flex !important;
-        /* अब यह सिर्फ उतनी ही जगह लेगा जितनी आपने 'width' दी है */
     }
 
     .navBar a {
@@ -608,18 +641,22 @@ address {
         width: 100%;
         border-bottom: 1px solid #f0f0f0;
         text-align: left;
-        /* लिंक्स को बाईं तरफ रखने के लिए */
         font-size: 14px;
         background-color: #f8f9fa;
     }
 
-    /*---------- Responsive College Image for Mobile Phone ----------*/
+    .y {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* College Image */
     .collegeIMG img {
         height: 17vh;
         width: 100%;
     }
 
-    /* ---------------- Section 1 ---------------- */
+    /* Section 1 */
     .section1 {
         display: flex;
         flex-direction: column;
@@ -650,7 +687,7 @@ address {
         color: #5C5C5C;
     }
 
-    /* ---------------- Section 2  ---------------- */
+    /* Section 2 */
     .course {
         height: fit-content;
         width: 100%;
@@ -697,9 +734,29 @@ address {
         width: 100%;
         padding: 10px;
     }
+
+    /* About Page */
+    #History {
+        height: fit-content;
+        width: 90%;
+    }
+
+    #History h1 {
+        height: 100px;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 0;
+    }
+
+    #History p {
+        margin-top: 0;
+        padding: 0;
+    }
 }
 
 .y {
     position: relative;
-    /* ताकि .navBar इसके हिसाब से अपनी जगह तय कर सके */
 }
