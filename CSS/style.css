@@ -186,7 +186,9 @@ header .part2 {
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
-    width: 30px;
+    width: 35px;
+    height: 35px;
+    justify-content: space-evenly;
 }
 
 .menu-icon span {
@@ -544,6 +546,175 @@ address {
     color: #E49B1F;
 }
 
+/* BCA.html */
+#BCA {
+    height: fit-content;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction {
+    height: fit-content;
+    width: 90%;
+    margin-top: 1%;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.introduction h1 {
+    color: #0b2c5f;
+    text-align: center;
+}
+
+.introduction p {
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.syllabus {
+    height: fit-content;
+    width: 90%;
+    margin-top: 1%;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 3px gray;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.syllabus h1 {
+    color: #0b2c5f;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.subjectIMG {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.subjectIMG img {
+    height: 30vh;
+    width: 45%;
+}
+
+.syllabus a {
+    text-decoration: none;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.syllabus a:hover {
+    color: red;
+}
+
+.fees {
+    height: fit-content;
+    width: 90%;
+    margin-top: 1%;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 3px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fees h1 {
+    color: #0b2c5f;
+    text-align: center;
+    margin-top: 10px;
+}
+
+table {
+    margin-top: 30px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: fit-content;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    border: 2px solid black;
+    padding: 8px;
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.total-row {
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+.lab {
+    height: fit-content;
+    width: 90%;
+    margin-top: 1%;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.lab h1 {
+    color: #0b2c5f;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.lab img {
+    height: auto;
+    width: 40%;
+}
+
+#labImg {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.faculty {
+    height: fit-content;
+    width: 90%;
+    margin-top: 1%;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.faculty h1 {
+    color: #0b2c5f;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.faculty img {
+    padding-top: 30px;
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
 
 /*-----Responsive Header-----*/
 
@@ -754,6 +925,55 @@ address {
     #History p {
         margin-top: 0;
         padding: 0;
+    }
+
+    /* BCA.html */
+    .syllabus {
+        height: fit-content;
+        width: 90%;
+        margin-top: 1%;
+        padding: 5px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 0px 0px 3px gray;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .syllabus h1 {
+        color: #0b2c5f;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .subjectIMG {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .subjectIMG img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .syllabus a {
+        text-decoration: none;
+        font-size: 20px;
+        color: darkblue;
+    }
+
+    .syllabus a:hover {
+        color: red;
+    }
+
+    .fees {
+        width: 100%;
+    }
+
+    .syllabus {
+        width: 100%;
     }
 }
 
