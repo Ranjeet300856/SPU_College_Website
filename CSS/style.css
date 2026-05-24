@@ -282,7 +282,7 @@ header .part2 {
 }
 
 .noticeWrapper {
-    height: 290px;
+    height: 410px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -302,20 +302,20 @@ header .part2 {
 .Notice {
     padding: 15px;
     border-bottom: 1px solid gray;
-    height: 80px;
+    height: fit-content;
     margin: 0;
 }
 
 .Notice a {
     text-decoration: none;
-    color: black;
+    color: #5C5C5C;
     font-size: 18px;
 }
 
 @keyframes scrollUp {
 
     0% {
-        transform: translateY(100%);
+        transform: translateY(290px);
     }
 
     100% {
@@ -422,7 +422,7 @@ header .part2 {
     white-space: nowrap;
     position: relative;
     padding: 20px 0;
-    border: 2px solid black;
+
     background-color: whitesmoke;
 }
 
@@ -442,7 +442,7 @@ header .part2 {
 
 .Part2 .img {
     height: 100%;
-    border: 2px solid black;
+
     border-radius: 5px;
     min-width: 350px;
     margin: 0 10px;
@@ -451,6 +451,12 @@ header .part2 {
     justify-content: center;
     flex-shrink: 0;
     background-color: white;
+}
+
+.Part2 .img img {
+    width: clamp(80px, 10vw, 120px);
+    height: 100%;
+    width: 100%;
 }
 
 @keyframes scroll {
@@ -869,7 +875,7 @@ td {
 
     .card {
         height: 200px;
-        width: 41%;
+        width: 42%;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
