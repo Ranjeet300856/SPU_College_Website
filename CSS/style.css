@@ -9,27 +9,28 @@ html {
 }
 
 /*-----Header Desing-----*/
-.x {
-    display: flex;
-}
-
 header {
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
-    height: 200px;
+    height: 25vh;
     width: 100%;
 }
 
-header .part1 {
+.x {
+    display: flex;
+    height: 85%;
+    width: 100%;
+}
+
+.part1 {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 160px;
-    width: 50%;
+    height: fit-content;
+    width: fit-content;
 }
 
-/* Logo */
 .logo {
     padding: 10px;
 }
@@ -38,7 +39,6 @@ header .part1 {
     width: clamp(80px, 10vw, 120px);
 }
 
-/* Main Content */
 .mainContent {
     display: inline-flex;
     flex-direction: column;
@@ -82,15 +82,17 @@ header .part1 {
 }
 
 /* Header Part 2 */
-header .part2 {
-    height: 160px;
+
+.part2 {
+    height: auto;
+    width: auto;
     display: grid;
     margin-left: auto;
     margin-right: 20px;
 }
 
 #phone {
-    width: 200px;
+    width: fit-content;
     display: flex;
     align-items: last baseline;
 }
@@ -145,8 +147,15 @@ header .part2 {
 
 /* Navigation Bar */
 
+.y {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .navBar {
-    height: 40px;
+    height: auto;
     width: 60%;
     display: flex;
     justify-content: space-evenly;
@@ -197,11 +206,6 @@ header .part2 {
     background-color: #0b2c5f;
     margin: 2px 0;
     transition: 0.4s;
-}
-
-.y {
-    display: flex;
-    justify-content: center;
 }
 
 /* Dropdown */
@@ -1145,34 +1149,35 @@ td {
 
     /* Header */
     header {
-        background-color: whitesmoke;
         height: 40vh;
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    header .x {
+    .x {
         height: 90%;
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    header .y {
+    .y {
         height: 10%;
         width: 100%;
         background-color: wheat;
+        display: flex;
+        justify-content: flex-start;
     }
 
-    header .x .part1 {
+    .part1 {
         height: 70%;
         width: 100%;
         display: flex;
         align-items: flex-start;
     }
 
-    header .x .part2 {
+    .part2 {
         height: 60%;
         width: 100%;
         display: flex;
@@ -1184,26 +1189,25 @@ td {
         box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    header .x .part1 .logo {
+    .logo {
         height: 40%;
     }
 
-    header .x .part1 .logo img {
+    .logo img {
         padding-top: 5px;
     }
 
-    header .x .part1 .mainContent {
+    .mainContent {
         height: 100%;
         padding: 20px;
         display: flex;
         flex-direction: column;
     }
 
-    header .x .part1 .mainContent h1 a {
+    .mainContent h1 a {
         font-size: 30px;
         font-weight: 700;
         padding-top: 5px;
-
     }
 
     /* Navigation Bar*/
@@ -1237,11 +1241,6 @@ td {
         text-align: left;
         font-size: 14px;
         background-color: #f8f9fa;
-    }
-
-    .y {
-        display: flex;
-        justify-content: flex-start;
     }
 
     .dropdown {
