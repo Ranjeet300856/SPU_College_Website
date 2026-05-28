@@ -891,6 +891,114 @@ td {
     text-align: justify;
 }
 
+/* College Staff */
+
+.HeadDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#staff {
+    height: fit-content;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 3px gray;
+    background-color: #fffaf0;
+    border-radius: 20px;
+}
+
+.studentCornarHeading {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #E49B1F;
+    border-bottom: 2px solid #E49B1F;
+    width: 90%;
+    text-align: center;
+}
+
+.staff1 {
+    border: 2px solid #E49B1F;
+    height: fit-content;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.staff2 {
+    border: 2px solid #E49B1F;
+    height: fit-content;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.staff1 img {
+    width: 100%;
+    padding: 10px;
+}
+
+.staff2 img {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Calander */
+.celender {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: fit-content;
+    box-shadow: 0px 0px 3px gray;
+    background-color: #fffaf0;
+    border-radius: 20px;
+}
+
+.celender img {
+    width: 90%;
+    border: 2px solid #E49B1F;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Time Table */
+.timeTableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: space-evenly;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #fffaf0;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.timeTableContainer h1 {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 20px;
+    color: #E49B1F;
+}
+
+.timeTable {
+    width: 48%;
+}
+
+.timeTable img {
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    border: 1px solid #E49B1F;
+    border-radius: 10px;
+}
+
 /*-----Responsive Header-----*/
 
 @media screen and (max-width: 868px) {
@@ -1188,6 +1296,50 @@ td {
 
     #principal_message {
         width: 95%;
+    }
+
+    #staff {
+        width: 95%;
+    }
+
+    .studentCornarHeading h1 {
+        font-size: 40px;
+    }
+
+    .celender {
+        width: 95%;
+    }
+
+    /* Time Table */
+    .timeTableContainer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        border-radius: 20px;
+        background-color: #fffaf0;
+        box-shadow: 0px 0px 3px gray;
+    }
+
+    .timeTableContainer h1 {
+        font-size: 28px;
+        text-align: center;
+        padding-top: 20px;
+        color: #E49B1F;
+    }
+
+    .timeTable {
+        width: 90%;
+    }
+
+    .timeTable img {
+        margin-top: 20px;
+        width: 100%;
+        height: 80%;
+        border: 1px solid #E49B1F;
+        border-radius: 10px;
     }
 }
 
