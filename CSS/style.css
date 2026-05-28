@@ -204,6 +204,51 @@ header .part2 {
     justify-content: center;
 }
 
+/* Dropdown */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    background-color: whitesmoke;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.dropdown:hover ul {
+    display: block;
+}
+
+.dropdown ul li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.dropdown ul li a {
+    display: block;
+    padding: 12px 18px;
+    color: #0b2c5f;
+    background-color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+
+.dropdown ul li a:hover {
+    background-color: #f5f5f5;
+    color: #E49B1F;
+}
+
+
 /*-----Main Section Design-----*/
 
 /* College Image */
@@ -813,6 +858,39 @@ td {
     font-size: 18px;
 }
 
+/* Principal Message */
+.PMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#principal_message {
+    height: fit-content;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fffaf0;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#principal_message h1 {
+    font-size: 35px;
+    color: #E49B1F;
+    text-align: center;
+}
+
+#principal_message p {
+    font-size: 18px;
+    color: #5c5c5c;
+    text-align: justify;
+}
+
 /*-----Responsive Header-----*/
 
 @media screen and (max-width: 868px) {
@@ -893,7 +971,7 @@ td {
         position: absolute;
         top: 100%;
         left: 0;
-        width: 250px;
+        width: 50%;
         background-color: white;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
         z-index: 1000;
@@ -916,6 +994,36 @@ td {
     .y {
         display: flex;
         justify-content: flex-start;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown>a {
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown ul {
+        position: static;
+        display: block;
+        width: 100%;
+        width: 90%;
+        box-shadow: none;
+        margin-top: 0;
+        margin-left: 18px;
+        padding-left: 0;
+        background-color: #f9f9f9;
+        box-shadow: none;
+        border-left: 2px solid #E49B1F;
+    }
+
+    .dropdown ul li a {
+        font-size: 14px;
+        padding: 10px 15px;
+        display: block;
+        width: 100%;
     }
 
     /* College Image */
@@ -1076,6 +1184,10 @@ td {
     /**/
     .choice {
         margin-bottom: 15px;
+    }
+
+    #principal_message {
+        width: 95%;
     }
 }
 
