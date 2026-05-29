@@ -1184,6 +1184,35 @@ td {
     margin-bottom: 30px;
 }
 
+/* Contact Us */
+.contactUs {
+    height: fit-content;
+    width: 90%;
+    margin: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+}
+
+.address {
+    height: auto;
+    width: 50%;
+}
+
+.address p {
+    font-size: 18px;
+}
+
+#collegeMap {
+    width: 90%;
+    margin: auto;
+}
+
+.collegeMap iframe {
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 /*-----Responsive Header-----*/
 
 @media screen and (max-width: 868px) {
@@ -1532,6 +1561,28 @@ td {
 
     .library {
         width: 95%;
+    }
+
+    .Student_Corner {
+        width: 95%;
+    }
+
+    .contactUs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        width: 95%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #collegeMap {
+        margin-top: 20px;
+        border-top: 2px solid #E49B1F;
+        padding-top: 20px;
     }
 }
 
