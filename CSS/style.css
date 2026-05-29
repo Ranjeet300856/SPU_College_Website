@@ -267,11 +267,12 @@ header {
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
+    height: fit-content;
     width: 100%;
     padding: 20px;
 }
 
-.section1 .about {
+.about {
     height: fit-content;
     width: 50%;
     padding: 20px;
@@ -281,45 +282,42 @@ header {
     transition: 0.5s;
 }
 
-.section1 .about:hover {
+.about:hover {
     transform: scale(1.01) translateY(-4px);
 }
 
-.section1 .studentNotice {
-    width: 20%;
-}
-
-.section1 .about h1 {
+.about h1 {
     color: #E49B1F;
     text-align: center;
     font-size: 40px;
     padding-top: 30px;
 }
 
-.section1 .about p {
+.about p {
     font-size: 16px;
     line-height: 30px;
     text-align: center;
     text-align: justify;
 }
 
-.section1 .about p a {
+.about p a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.section1 .studentNotice {
+.studentNotice {
+    width: 20%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     box-shadow: 0px 0px 10px gray;
-    height: 410px;
+    height: 430px;
     overflow: hidden;
     position: relative;
     transition: 0.5s;
 }
 
-.section1 .studentNotice:hover {
+.studentNotice:hover {
     transform: scale(1.01) translateY(-4px);
 }
 
@@ -330,8 +328,14 @@ header {
     border-top-right-radius: 15px;
 }
 
+.heading3 h3 {
+    font-size: 24px;
+    color: white;
+    padding: 20px;
+}
+
 .noticeWrapper {
-    height: 410px;
+    height: 430px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -340,12 +344,6 @@ header {
 .noticeContent {
     position: absolute;
     animation: scrollUp 15s linear infinite;
-}
-
-.heading3 h3 {
-    font-size: 24px;
-    color: white;
-    padding: 20px;
 }
 
 .Notice {
@@ -447,6 +445,7 @@ header {
 .IMGContainer {
     margin-top: 50px;
     height: 45vh;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -471,7 +470,6 @@ header {
     white-space: nowrap;
     position: relative;
     padding: 20px 0;
-
     background-color: whitesmoke;
 }
 
@@ -491,7 +489,6 @@ header {
 
 .Part2 .img {
     height: 100%;
-
     border-radius: 5px;
     min-width: 350px;
     margin: 0 10px;
@@ -534,9 +531,8 @@ footer {
 }
 
 .box {
-
     width: 20%;
-    height: 450px;
+    height: fit-content;
 }
 
 .box h5 {
@@ -577,6 +573,7 @@ address {
 
 #History {
     height: 60vh;
+    height: fit-content;
     width: 60%;
     text-align: justify;
     margin-top: 30px;
@@ -661,7 +658,7 @@ address {
 }
 
 .subjectIMG img {
-    height: 30vh;
+    height: fit-content;
     width: 45%;
 }
 
@@ -1063,38 +1060,6 @@ td {
     text-align: justify;
 }
 
-/* NCC */
-
-.nss {
-    height: fit-content;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #fffaf0;
-    box-shadow: 0px 0px 3px gray;
-}
-
-.nss h1 {
-    height: fit-content;
-    width: 90%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 35px;
-    color: #E49B1F;
-    text-align: center;
-}
-
-.nss p {
-    height: fit-content;
-    width: 90%;
-    margin-bottom: 30px;
-    color: #5c5c5c;
-    font-size: 18px;
-    text-align: justify;
-}
-
 /* Library */
 
 .library {
@@ -1143,7 +1108,7 @@ td {
     width: 90%;
 }
 
-/*******/
+/* Admission Process and College Features*/
 .Student_Container {
     height: fit-content;
     width: 100%;
@@ -1208,7 +1173,7 @@ td {
     margin: auto;
 }
 
-.collegeMap iframe {
+#collegeMap iframe {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -1353,29 +1318,29 @@ td {
     .section1 {
         display: flex;
         flex-direction: column;
-        height: 110vh;
+        height: fit-content;
         border: none;
         margin-top: 5px;
     }
 
-    .section1 .about {
+    .about {
         border: none;
         height: fit-content;
         width: 100%;
         background-color: white;
     }
 
-    .section1 .studentNotice {
+    .studentNotice {
         border: none;
-        height: 35%;
+        height: fit-content;
         width: 100%;
     }
 
-    .section1 .about h1 {
+    .about h1 {
         font-size: 30px;
     }
 
-    .section1 .about p {
+    .about p {
         line-height: 20px;
         color: #5C5C5C;
     }
@@ -1567,6 +1532,7 @@ td {
         width: 95%;
     }
 
+    /* Contact Us */
     .contactUs {
         display: flex;
         flex-direction: column;

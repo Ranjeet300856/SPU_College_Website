@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPU College, Falna</title>
-    <link rel="icon" type="webp" href="../logo-1.webp">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="icon" type="webp" href="../../Image/logo-1.webp">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
+    <script src="../../js/script.js"></script>
     <!-----Header----->
     <header>
         <div class="x">
             <div class="part1">
 
                 <div class="logo">
-                    <a href="index.html"><img src="../logo-1.webp" alt="SPU College - Logo"></a>
+                    <a href="index.html"><img src="../../Image/logo-1.webp" alt="SPU College - Logo"></a>
                 </div>
 
 
@@ -35,14 +35,14 @@
 
             <div class="part2">
                 <div id="phone">
-                    <img src="../smartphone.png" alt="phone-icon">
+                    <img src="../../Image/smartphone.png" alt="phone-icon">
                     <div class="phoneText">
                         <p>Call us today</p>
                         <a href="tel:+919414814082">9414814082</a>
                     </div>
                 </div>
                 <div id="email">
-                    <img src="../communication.png" alt="email-icon">
+                    <img src="../../Image/communication.png" alt="email-icon">
                     <div class="emailText">
                         <p>Email us on</p>
                         <a href="mailto:collegespu@rediffmail.com">collegespu@rediffmail.com</a>
@@ -58,12 +58,29 @@
                 <span></span>
             </div>
             <div class="navBar" id="navLinks">
-                <a href="../index.html">Home</a>
-                <a href="../index.html">About Us</a>
-                <a href="../index.html">Academics</a>
-                <a href="../index.html">Student Corner</a>
-                <a href="../index.html">Gallery</a>
-                <a href="../index.html">Contact Us</a>
+                <a href="index.html">Home</a>
+                <a href="#ABOUT">About Us</a>
+                <a href="#ACADEMICS">Academics</a>
+                <div class="dropdown">
+                    <a href="#">Student Corner</a>
+                    <ul>
+                        <li><a href="../Student_Corner/principal_message.html">Principal Message</a></li>
+                        <li><a href="../Student_Corner/features.html">College Features</a></li>
+                        <li><a href="../Student_Corner/collegeStaff.html">College Staff</a></li>
+                        <li><a href="#">Admission Process</a></li>
+                        <li><a href="../Student_Corner/calander.html">Academic Calendar</a></li>
+                        <li><a href="../Student_Corner/timeTable.html">Time Table</a></li>
+                        <li><a href="https://erp.jnvuiums.in/(S(oporrktvnmcsv2su0kflfjxv))/CollegePortal/PA_Notification_Mst.aspx?type=4"
+                                target="_blank">Syllabus</a>
+                        </li>
+                        <li><a href="#">College Library</a></li>
+                        <li><a href="../Student_Corner/fee.html">Fee Structure</a></li>
+                        <li><a href="../Student_Corner/nss.html">NSS</a></li>
+                        <li><a href="#">NCC</a></li>
+                    </ul>
+                </div>
+                <a href="#EVENTS">Gallery</a>
+                <a href="../Student_Corner/nss.html">Contact Us</a>
             </div>
         </div>
     </header>
@@ -71,28 +88,63 @@
     <!-----Main----->
     <section class="academic">
         <div class="introduction">
-            <h1>Welcome to Bachelor of Computer Applications (B.C.A.)</h1>
+            <h1>Welcome to Bachelor of Science (B.Sc.)</h1>
+
             <p>
-                The Bachelor of Computer Applications (B.C.A.) program is designed to provide students with a strong
-                foundation in computer science, programming, software development,
-                and modern technologies. This 3-year undergraduate course is divided into six semesters <b>(1st to 6th
-                    Semester)</b>
-                and prepares students for successful careers in the IT industry as well as higher studies in computer
-                applications.
+                The Bachelor of Science (B.Sc.) program is designed to provide students with a strong
+                foundation in scientific knowledge, research, analytical thinking, and practical learning.
+                This 3-year undergraduate course is divided into six semesters <b>(1st to 6th Semester)</b>
+                and covers various subjects such as physics, chemistry, mathematics, biology, and other
+                science-related disciplines. The program helps students develop problem-solving abilities,
+                laboratory skills, and scientific understanding, preparing them for higher education,
+                research opportunities, and successful careers in the science and technology fields.
             </p>
+
         </div> <br>
 
         <div class="lab">
-            <h1>B.C.A. Computer Lab</h1>
-            <div id="labImg">
-                <img src="../Academic_Program/lab-comp1.webp">
-                <img src="../Academic_Program/lab-comp2.webp">
+            <h1>B.Sc. Science Laboratory</h1>
+            <div id="labImg" class="bscLab">
+                <img src="../../Image/physics_lab.webp">
+                <img src="../../Image/chemistry_lab.webp">
+                <img src="../../Image/zoology_ug_lab.webp">
+                <img src="../../Image/botany_lab.webp">
             </div>
         </div> <br>
 
-        <div class="faculty">
-            <h1>Faculty of Computer Science Department</h1>
-            <img src="../Academic_Program/staff_page-0002-1536x1160.jpg">
+        <div id="science-groups">
+            <h1>Science Groups & Subjects</h1>
+
+            <div class="group-container">
+                <div class="group-container">
+
+                    <div class="group-card">
+                        <h2>Mathematics Group</h2>
+
+                        <ul>
+                            <li>Physics</li>
+                            <li>Chemistry</li>
+                            <li>Mathematics</li>
+                        </ul>
+                    </div>
+
+                    <div class="group-card">
+                        <h2>Biology Group</h2>
+
+                        <ul>
+                            <li>Zoology</li>
+                            <li>Botany</li>
+                            <li>Chemistry</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="faculty" style="margin-top: 20px;">
+            <h1>Faculty of Science</h1>
+            <img src="../../Image/bsc_staff.jpg">
         </div> <br>
 
         <div class="fees">
@@ -101,9 +153,9 @@
                 <table>
                     <tr class="total-row" style="background-color: #f5f7ff;" class="row1">
                         <th>Year/Sem</th>
-                        <td>BCA 1st Year <br> (1st & 2nd Sem.)</td>
-                        <td>BCA 2nd Year <br> (3rd & 4th Sem.)</td>
-                        <td>BCA 3rd Year <br> (5th & 6th Sem.)</td>
+                        <td>B.Sc. 1st Year <br> (1st & 2nd Sem.)</td>
+                        <td>B.Sc. 2nd Year <br> (3rd & 4th Sem.)</td>
+                        <td>B.Sc. 3rd Year <br> (5th & 6th Sem.)</td>
                     </tr>
 
                     <tr class="total-row">
@@ -169,7 +221,7 @@
                         <td colspan="3" style="text-align: right;"><b>22500.00</b></td>
                     </tr>
                     <tr style="background-color: #f5f7ff;">
-                        <th>2nd Installment <br> December/Januage or at submission of exam form</th>
+                        <th>2nd Installment <br> December/January or at submission of exam form</th>
                         <td colspan="3" style="text-align: right;"><b>10000.00</b></td>
                     </tr>
                 </table>
@@ -179,12 +231,12 @@
         <div class="syllabus">
             <h1>Academic Subjects & Syllabus</h1>
             <div class="subjectIMG">
-                <img src="../Academic_Program/bca1.webp">
-                <img src="../Academic_Program/bca2.webp">
-                <img src="../Academic_Program/bca3.webp">
-                <img src="../Academic_Program/bca4.webp">
-                <img src="../Academic_Program/bca5.webp">
-                <img src="../Academic_Program/bca6.webp">
+                <img src="../../Image/bsc1.webp">
+                <img src="../../Image/bsc2.webp">
+                <img src="../../Image/bsc3.webp">
+                <img src="../../Image/bsc4-1.webp">
+                <img src="../../Image/bsc5-1.webp">
+                <img src="../../Image/bsc6.webp">
             </div>
 
             <a href="https://erp.jnvuiums.in/(S(wdasje5dwaa5dxjnrccmup5y))/CollegePortal/PA_Notification_Mst.aspx?type=4"
@@ -206,52 +258,57 @@
         <div class="box">
             <h5>IMPORTANT LINKS</h5>
             <ul>
-                <li style="padding-bottom: 5px;"><a href="https://swayam.gov.in/">SWAYAM PORTAL</a></li>
+                <li style="padding-bottom: 5px;"><a href="https://swayam.gov.in/" target="_blank">SWAYAM PORTAL</a></li>
                 <li style="padding-bottom: 5px;"><a
-                        href="https://erp.jnvuiums.in/(S(nwivfmhdqr4dbnxebzhonmhf))/CollegePortal/General_Inst_Notification.aspx?type=G&&Heading=General%20Instructions%20and%20Notification">
+                        href="https://erp.jnvuiums.in/(S(nwivfmhdqr4dbnxebzhonmhf))/CollegePortal/General_Inst_Notification.aspx?type=G&&Heading=General%20Instructions%20and%20Notification"
+                        target="_blank">
                         JNVU NOTICE & CIRCULAR</a></li>
                 <li style="padding-bottom: 5px;"><a
-                        href="https://results.jnvuiums.in/(S(fyigq10rwcb0eruxtkoukyht))/Results/ExamResult.aspx">JNVU
+                        href="https://results.jnvuiums.in/(S(fyigq10rwcb0eruxtkoukyht))/Results/ExamResult.aspx"
+                        target="_blank">JNVU
                         RESULTS
                     </a></li>
-                <li style="padding-bottom: 5px;"><a href="http://hte.rajasthan.gov.in/scholarship.php">CM
+                <li style="padding-bottom: 5px;"><a href="http://hte.rajasthan.gov.in/scholarship.php"
+                        target="_blank">CM
                         SCHOLARSHIP</a></li>
-                <li style="padding-bottom: 5px;"><a href="https://sje.rajasthan.gov.in/Default.aspx?PageID=346">POST
+                <li style="padding-bottom: 5px;"><a href="https://sje.rajasthan.gov.in/Default.aspx?PageID=346"
+                        target="_blank">POST
                         METRIC SCHOLARSHIP</a></li>
-                <li style="padding-bottom: 5px;"><a href="https://scholarships.gov.in/">MINORITY SCHOLARSHIP</a></li>
+                <li style="padding-bottom: 5px;"><a href="https://scholarships.gov.in/" target="_blank">MINORITY
+                        SCHOLARSHIP</a></li>
             </ul>
         </div>
         <div class="box">
             <h5>LATEST NEWS</h5>
             <ul>
-                <li><a
-                        href="https://spucollegefalna.com/%e0%a4%9c%e0%a4%bf%e0%a4%b2%e0%a4%be-%e0%a4%b8%e0%a5%8d%e0%a4%a4%e0%a4%b0%e0%a5%80%e0%a4%af-%e0%a4%ad%e0%a4%be%e0%a4%b0%e0%a4%a4%e0%a5%80%e0%a4%af-%e0%a4%b8%e0%a4%82%e0%a4%b8%e0%a5%8d%e0%a4%95/">
+                <li><a href="https://spucollegefalna.com/%e0%a4%9c%e0%a4%bf%e0%a4%b2%e0%a4%be-%e0%a4%b8%e0%a5%8d%e0%a4%a4%e0%a4%b0%e0%a5%80%e0%a4%af-%e0%a4%ad%e0%a4%be%e0%a4%b0%e0%a4%a4%e0%a5%80%e0%a4%af-%e0%a4%b8%e0%a4%82%e0%a4%b8%e0%a5%8d%e0%a4%95/"
+                        target="_blank">
                         SPU (PG) College, Falna secured the first position in the District Level Indian Culture
                         Knowledge Test
                     </a> </li> <br>
 
                 <li>
-                    <a
-                        href="https://spucollegefalna.com/%e0%a4%85%e0%a4%96%e0%a4%bf%e0%a4%b2-%e0%a4%b0%e0%a4%be%e0%a4%9c%e0%a4%b8%e0%a5%8d%e0%a4%a5%e0%a4%be%e0%a4%a8-%e0%a4%85%e0%a4%82%e0%a4%a4%e0%a4%b0-%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%b5%e0%a4%bf/">
+                    <a href="https://spucollegefalna.com/%e0%a4%85%e0%a4%96%e0%a4%bf%e0%a4%b2-%e0%a4%b0%e0%a4%be%e0%a4%9c%e0%a4%b8%e0%a5%8d%e0%a4%a5%e0%a4%be%e0%a4%a8-%e0%a4%85%e0%a4%82%e0%a4%a4%e0%a4%b0-%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%b5%e0%a4%bf/"
+                        target="_blank">
                         Vidya Bhavan T.T. College, Udaipur wins All Rajasthan Inter-College Debate Competition
                     </a>
                 </li> <Br>
 
                 <li>
-                    <a
-                        href="https://spucollegefalna.com/interviews-by-yutika-natural-private-limited-at-spu-college-6-students-selected/">
+                    <a href="https://spucollegefalna.com/interviews-by-yutika-natural-private-limited-at-spu-college-6-students-selected/"
+                        target="_blank">
                         Interviews by Yutika Natural Private Limited at SPU College; 6 Students Selected
                     </a>
                 </li> <br>
 
                 <li>
-                    <a
-                        href="https://spucollegefalna.com/awareness-lecture-series-on-social-media-platforms-organized-at-spu-college/">
+                    <a href="https://spucollegefalna.com/awareness-lecture-series-on-social-media-platforms-organized-at-spu-college/"
+                        target="_blank">
                         Awareness Lecture Series on Social Media Platforms Organized at SPU College
                     </a>
                 </li> <br>
                 <li>
-                    <a href="https://spucollegefalna.com/antakshari-competition-held-for-students/">
+                    <a href="https://spucollegefalna.com/antakshari-competition-held-for-students/" target="_blank">
                         Antakshari competition organized under the aegis of Faculty of Computer Science
                     </a>
                 </li>
@@ -260,7 +317,7 @@
         <div class="box">
             <h5>Quick Contact</h5>
             <address>
-                <a id="address" href="https://maps.app.goo.gl/3HvWvvUocHRqy9xx9">
+                <a id="address" href="https://maps.app.goo.gl/3HvWvvUocHRqy9xx9" target="_blank">
                     S.P.U. (P.G.) College Bali Road , Falna Post Box No. – 15, Falna – 306116 Dist. – Pali (Rajasthan)
                     INDIA
                     Phone : 02938 – 236632
@@ -268,7 +325,6 @@
             </address>
         </div>
     </footer>
-
 </body>
 
 </html>
