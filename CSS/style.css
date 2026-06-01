@@ -1180,11 +1180,11 @@ td {
 
 /*-----Responsive-----*/
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 768px) {
 
     /* Header */
     header {
-        height: 40vh;
+        height: 48vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1383,6 +1383,10 @@ td {
         font-size: 10px;
     }
 
+    #bcom p {
+        font-size: 15px;
+    }
+
     footer {
         display: flex;
         flex-direction: column;
@@ -1457,11 +1461,32 @@ td {
     }
 
     .fees {
+        height: fit-content;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bugFee {
+        height: fit-content;
         width: 100%;
+
+        overflow-x: auto;
+        /* यह मोबाइल पर टेबल के नीचे एक स्क्रॉल बार ला देगा */
+        -webkit-overflow-scrolling: touch;
+        /* मोबाइल पर स्क्रॉलिंग को स्मूथ बनाने के लिए */
+    }
+
+    .bugFee table {
+        height: 100%;
+        width: 100%;
+        table-layout: fixed;
+        min-width: 600px;
     }
 
     .syllabus {
-        width: 100%;
+        width: 90%;
     }
 
     /**/
