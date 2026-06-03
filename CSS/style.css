@@ -1387,6 +1387,10 @@ td {
         font-weight: bold;
     }
 
+    #bca p {
+        font-size: 8px;
+    }
+
     #msc {
         width: 60%;
     }
@@ -1414,7 +1418,7 @@ td {
 
     #History h1 {
         height: 100px;
-        font-size: 35px;
+        font-size: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
