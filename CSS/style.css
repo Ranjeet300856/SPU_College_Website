@@ -1184,21 +1184,25 @@ td {
 
     /* Header */
     header {
-        height: 48vh;
+        min-height: 300px;
+        height: auto;
         width: 100%;
         display: flex;
         flex-direction: column;
+        padding-top: 10px;
     }
 
     .x {
-        height: 90%;
+        min-height: 270px;
+        height: auto;
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
     .y {
-        height: 10%;
+        min-height: 30px;
+        height: auto;
         width: 100%;
         background-color: wheat;
         display: flex;
@@ -1206,36 +1210,36 @@ td {
     }
 
     .part1 {
-        height: 70%;
+        min-height: 200px;
+        height: auto;
         width: 100%;
         display: flex;
         align-items: flex-start;
     }
 
     .part2 {
-        height: 60%;
+        min-height: 70px;
+        height: auto;
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         padding-right: 10px;
         padding-left: 10px;
         border-radius: 8px;
-        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .logo {
-        height: 40%;
-    }
-
-    .logo img {
-        padding-top: 5px;
+        min-height: 200px;
+        height: auto;
+        padding: 20px;
     }
 
     .mainContent {
-        height: 100%;
-        padding: 20px;
+        min-height: 200px;
+        height: auto;
         display: flex;
+        padding-top: 20px;
         flex-direction: column;
     }
 
@@ -1243,6 +1247,11 @@ td {
         font-size: 30px;
         font-weight: 700;
         padding-top: 5px;
+    }
+
+    .mainContent p {
+        text-align: justify;
+        font-size: 18px;
     }
 
     /* Navigation Bar*/
@@ -1310,7 +1319,8 @@ td {
 
     /* College Image */
     .collegeIMG img {
-        height: 17vh;
+        min-height: 150px;
+        height: auto;
         width: 100%;
     }
 
@@ -1353,16 +1363,22 @@ td {
         margin-top: 20px;
         display: flex;
         justify-content: center;
+        align-items: center;
+    }
+
+    .courseHeading h2 {
+        font-size: 30px;
     }
 
     .card {
         height: 200px;
-        width: 42%;
+        width: 40%;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
     .card p {
         font-weight: 100;
+        font-size: 10px;
     }
 
     .card button {
@@ -1375,18 +1391,6 @@ td {
         width: 60%;
     }
 
-    #msc p {
-        margin-top: 5px;
-    }
-
-    #bca p {
-        font-size: 10px;
-    }
-
-    #bcom p {
-        font-size: 15px;
-    }
-
     footer {
         display: flex;
         flex-direction: column;
@@ -1396,6 +1400,10 @@ td {
         height: fit-content;
         width: 100%;
         padding: 10px;
+    }
+
+    .Part1 h3 {
+        font-size: 30px;
     }
 
     /* About Page */
