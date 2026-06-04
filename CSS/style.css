@@ -1178,9 +1178,18 @@ td {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/*-----Responsive-----*/
+/*-----Responsive for tablat-----*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        display: flex;
+        justify-content: center;
+    }
 
-@media screen and (max-width: 768px) {
+    body {
+        width: 768px;
+        border: 2px solid whitesmoke;
+    }
+
 
     /* Header */
     header {
@@ -1232,6 +1241,426 @@ td {
 
     #phone {
         margin-bottom: 20px;
+    }
+
+    .logo {
+        min-height: 200px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .mainContent {
+        min-height: 200px;
+        height: auto;
+        display: flex;
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .mainContent h1 a {
+        font-size: 30px;
+        font-weight: 700;
+        padding-top: 5px;
+    }
+
+    .mainContent p {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    /* Navigation Bar*/
+
+    .menu-icon {
+        display: flex;
+        color: white;
+    }
+
+    .navBar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 50%;
+        background-color: white;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .navBar.active {
+        display: flex !important;
+    }
+
+    .navBar a {
+        padding: 12px 20px;
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: left;
+        font-size: 14px;
+        background-color: #f8f9fa;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown>a {
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown ul {
+        position: static;
+        display: block;
+        width: 100%;
+        width: 90%;
+        box-shadow: none;
+        margin-top: 0;
+        margin-left: 18px;
+        padding-left: 0;
+        background-color: #f9f9f9;
+        box-shadow: none;
+        border-left: 2px solid #E49B1F;
+    }
+
+    .dropdown ul li a {
+        font-size: 14px;
+        padding: 10px 15px;
+        display: block;
+        width: 100%;
+    }
+
+    /* College Image */
+    .collegeIMG img {
+        min-height: 150px;
+        height: auto;
+        width: 100%;
+    }
+
+    /* Section 1 */
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        border: none;
+        margin-top: 5px;
+    }
+
+    .about {
+        border: none;
+        height: fit-content;
+        width: 100%;
+        background-color: white;
+    }
+
+    .studentNotice {
+        margin-top: 20px;
+        border: none;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    .about p {
+        line-height: 20px;
+        color: #5C5C5C;
+    }
+
+    /* Section 2 */
+    .course {
+        height: fit-content;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .courseHeading h2 {
+        font-size: 30px;
+    }
+
+    .card {
+        height: 200px;
+        width: 40%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card p {
+        font-weight: 100;
+        font-size: 10px;
+    }
+
+    .card button {
+        background-color: whitesmoke;
+        color: black;
+        font-weight: bold;
+    }
+
+    #msc {
+        width: 60%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box ul li {
+        margin-left: 5px;
+    }
+
+    .box {
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Part1 h3 {
+        font-size: 30px;
+    }
+
+    /* About Page */
+    #History {
+        height: fit-content;
+        width: 90%;
+    }
+
+    #History h1 {
+        height: 100px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 0;
+    }
+
+    #History p {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    /* BCA.html */
+    .syllabus {
+        height: fit-content;
+        width: 90%;
+        margin-top: 1%;
+        padding: 5px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 0px 0px 3px gray;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .syllabus h1 {
+        color: #0b2c5f;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .subjectIMG {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .subjectIMG img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .syllabus a {
+        text-decoration: none;
+        font-size: 20px;
+        color: darkblue;
+    }
+
+    .syllabus a:hover {
+        color: red;
+    }
+
+    .fees {
+        height: fit-content;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bugFee {
+        height: fit-content;
+        width: 100%;
+
+        overflow-x: auto;
+        /* यह मोबाइल पर टेबल के नीचे एक स्क्रॉल बार ला देगा */
+        -webkit-overflow-scrolling: touch;
+        /* मोबाइल पर स्क्रॉलिंग को स्मूथ बनाने के लिए */
+    }
+
+    .bugFee table {
+        height: 100%;
+        width: 100%;
+        table-layout: fixed;
+        min-width: 600px;
+    }
+
+    .syllabus {
+        width: 90%;
+    }
+
+    /**/
+    .choice {
+        margin-bottom: 15px;
+    }
+
+    #principal_message {
+        width: 95%;
+    }
+
+    #staff {
+        width: 95%;
+    }
+
+    .studentCornarHeading h1 {
+        font-size: 40px;
+    }
+
+    .celender {
+        width: 95%;
+    }
+
+    /* Time Table */
+    .timeTableContainer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        border-radius: 20px;
+        background-color: #fffaf0;
+        box-shadow: 0px 0px 3px gray;
+    }
+
+    .timeTableContainer h1 {
+        font-size: 28px;
+        text-align: center;
+        padding-top: 20px;
+        color: #E49B1F;
+    }
+
+    .timeTable {
+        width: 90%;
+    }
+
+    .timeTable img {
+        margin-top: 20px;
+        width: 100%;
+        height: 80%;
+        border: 1px solid #E49B1F;
+        border-radius: 10px;
+    }
+
+    .feeStructure {
+        width: 95%;
+    }
+
+    .nss {
+        width: 95%;
+    }
+
+    .library {
+        width: 95%;
+    }
+
+    .Student_Corner {
+        width: 95%;
+    }
+
+    /* Contact Us */
+    .contactUs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        width: 95%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #collegeMap {
+        margin-top: 20px;
+        border-top: 2px solid #E49B1F;
+        padding-top: 20px;
+    }
+}
+
+/*-----Responsive-----*/
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    header {
+        min-height: 300px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .x {
+        min-height: 270px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .y {
+        min-height: 30px;
+        height: auto;
+        width: 100%;
+        background-color: wheat;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .part1 {
+        min-height: 200px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .part2 {
+        min-height: 70px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 8px;
+        margin-top: 10px;
+        border-top: 1px solid lightgray;
+    }
+
+    #phone {
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
 
     .logo {
