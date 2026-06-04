@@ -528,6 +528,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     background-color: #222222;
+    flex-wrap: wrap;
 }
 
 .box {
@@ -562,6 +563,44 @@ footer {
 
 address {
     padding-top: 20px;
+}
+
+
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* मोबाइल पर सही दिखने के लिए */
+    align-items: center;
+    border-top: 1px solid #333333;
+    /* हल्का सा सेपरेटर लाइन */
+    margin-top: 30px;
+    padding: 15px 40px;
+    /* साइड से गैप */
+    background-color: #1a1a1a;
+    /* फुटर से थोड़ा सा और डार्क बैकग्राउंड */
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    /* कॉलेज वेबसाइट के लिए परफेक्ट छोटा और प्रोफेशनल साइज */
+    color: #888888;
+    /* हल्का शांत ग्रे रंग */
+    margin: 0;
+}
+
+.footer-bottom .dev-link {
+    color: #ffffff;
+    /* आपका नाम सफ़ेद चमकेगा */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom .dev-link:hover {
+    color: #00a8ff;
+    /* होवर करने पर स्काई ब्लू (या जो आपके कॉलेज का थीम कलर हो वो रख सकते हैं) */
+    text-decoration: underline;
 }
 
 /*-----About Page Desing-----*/
@@ -1848,12 +1887,21 @@ td {
     footer {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: justify;
     }
 
     .box {
         height: fit-content;
-        width: 100%;
+        width: 90%;
         padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
     }
 
     .Part1 h3 {
