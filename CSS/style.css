@@ -416,6 +416,7 @@ header {
     box-shadow: 0 4px 15px gray;
     transition: 0.5s;
     border-radius: 8px;
+    border: 1px solid gray;
 }
 
 .card h2 {
@@ -515,9 +516,7 @@ header {
     }
 }
 
-.Part2:hover .scrolling-wrapper {
-    animation-play-state: paused;
-}
+.Part2:hover .scrolling-wrapper {}
 
 /*-----Footer Design-----*/
 footer {
@@ -569,7 +568,8 @@ address {
 .footer-bottom {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     /* मोबाइल पर सही दिखने के लिए */
     align-items: center;
     border-top: 1px solid #333333;
@@ -586,7 +586,7 @@ address {
     /* कॉलेज वेबसाइट के लिए परफेक्ट छोटा और प्रोफेशनल साइज */
     color: #888888;
     /* हल्का शांत ग्रे रंग */
-    margin: 0;
+    margin-bottom: 5px;
 }
 
 .footer-bottom .dev-link {
@@ -1847,6 +1847,7 @@ td {
         height: 200px;
         width: 40%;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        border: 1px solid gray;
     }
 
     .card p {
